@@ -2,7 +2,46 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+This Login page is built using bootstatp,reactstarp,react.js.
+
+## 1️⃣ Keeping components small
+
+Keeping components small is one of the React best practices that can work wonders.
+ ⁣
+## 2️⃣ Avoid component hell
+
+When it comes to components, it is very easy to overdo it and write even the tiniest snippets of code as components.
+
+There is no point in making every paragraph, span, or div a component.⁣
+
+## 3️⃣ Reduce the use of stateful components
+
+Stateless, or functional, components are generally better than stateful components when it comes to performance. The reason is that there is no state and no lifecycle method. In other words, less code to be executed and also transpiled.⁣
+
+## 4️⃣ Use functional component with hooks instead of classes
+
+👉No Class means no ‘this’⁣
+
+👉Fewer lines = better performance⁣
+
+👉Easier to read⁣
+
+👉Easier to understand⁣
+
+👉Easier to test⁣
+
+## 5️⃣ Don't use props in initial state
+
+##  Making user registration and login fast and easy is an important part of developing a new application. Not so long ago, registration forms were mandatory, and, often, users didn’t like them much. These forms required that users manually populate data, sometimes 10 or even more input fields, and not every user wanted to spend their precious time on that. Because of that, a lot of web applications lost potential users. Additionally we had login forms, in which users had to enter their usernames/emails and passwords. Often, users would forget their passwords and wouldn’t bother going through the process of password recovery, because they would find it tedious. So again, our new and shiny application would lose its users.
+
+## Authentication Workflow
+When users want to register for our application, they will click the “Signup with Facebook”. When the button is clicked, our client application will request an access token from Facebook. Then, the user will be presented with a dialog to allow the application to access some of their Facebook data. If the user gives their permission, our client application will get the Facebook access token in response. At this moment we can access user data from the client application, but an account is not yet created at our backend. In order to create new user account, our client application sends a request to our backend with the Facebook access token. The backend needs to verify the Facebook access token, so it is sends a verification request directly to Facebook. If the Facebook token is valid, the Facebook server will send user data back to our application. Upon receiving this data, the backend server has verified that the user credentials are valid and will create a user profile in our application with data received from Facebook. After that, the backend needs to create a JSON Web Token (JWT) which will be used to identify the user. This token is then sent in a response to the client application. The client application will receive JWT and save it for further use.
+
+## Creating a New Facebook Application
+In order to make it possible for users to log into our application with their Facebook accounts, we need to create an application on the Facebook developers page. This is a necessary step for getting an application ID and an application secret code required for all future communication between our application and Facebook. 
+After we have created our application, we need to add some application domains. This can be done on the application page, via the settings menu item. In the App Domains field, just for development purposes, we will add localhost. When our application is ready to be released, we will need to replace this with the real application domain.
+
+ ### In the project directory, you can run:
 
 ### `npm start`
 
