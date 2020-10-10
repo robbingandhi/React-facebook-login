@@ -1,0 +1,23 @@
+.signup-form{
+
+  width: 100%;
+  max-width: 330px;
+  padding: 10px;
+  margin: auto;
+  height: 100%;
+  text-align: center;
+  display: 100px auto;
+  border: 1px;
+}
+.App {
+  text-align: center;
+  display: 100px auto;
+  border: 1px;
+}
+.FirstName {
+  width: 100%;
+  max-width: 330px;
+  padding: 10px;
+  margin: auto;
+  height: 100%;
+}
